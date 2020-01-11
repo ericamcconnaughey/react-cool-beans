@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home(props) {
   return (
@@ -68,7 +69,7 @@ function Home(props) {
                 <h4>We can</h4>
                 <h3>CATER</h3>
                 <h4>your next event!</h4>
-                <button role="link" className="btn offset-4 offset-lg-3"><a href="catering.html">Learn More</a></button>
+                <button role="link" className="btn offset-4 offset-lg-3"><Link to="/catering" className="buttontext">Learn More</Link></button>
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@ function Home(props) {
 
         <div className="col-12 col-lg-4">
           <div className="menu box mx-auto">
-            <h3>FOOD & DRINK</h3>
+            <h3>FOOD and DRINK</h3>
             <div className="row row-content">
               <div className="col-6 col-lg-12">
                 <ul>
@@ -101,7 +102,7 @@ function Home(props) {
                   <li>Hearty Salads</li>
                   <li>Smoothies</li>
                   <li>True Coffee Roasters</li>
-                  <li>Lattes & Cappuccinos</li>
+                  <li>Lattes and Cappuccinos</li>
                   <li>Chai Tea</li>
                   <li>Loose Leaf Teas</li>
                   <li>Healthy Menu Choices</li>
@@ -110,7 +111,7 @@ function Home(props) {
             </div>
             <div className="row mx-auto">
               <div className="col-12">
-                <button className="btn offset-4 offset-lg-3" id="full-menu"><a href="menu.html">OUR FULL MENU</a></button>
+                <button className="btn offset-4 offset-lg-3" id="full-menu"><Link to="/menu" className="buttontext">OUR FULL MENU</Link></button>
               </div>
             </div>
           </div>
@@ -128,7 +129,7 @@ function Home(props) {
             <div className="eco-friendly box mx-auto">
               <h4>Locally-Owned and Eco-Friendly</h4>
               <p>We care about our environment. We use eco-friendly products that help make a difference. Most of our
-                containers are made from renewable resources & are 100% compostable.</p>
+                containers are made from renewable resources and are 100% compostable.</p>
             </div>
           </div>
 

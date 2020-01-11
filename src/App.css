@@ -1,4 +1,4 @@
-body {
+.container {
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -6,12 +6,14 @@ p, a {
   font-size: 1.1rem;
 }
 
-a {
+a, .buttontext {
   color: #fff;
 }
 
 .header {
   background-color: #424269;
+  padding: none;
+  width: 100%;
 }
 
 .navbar {
