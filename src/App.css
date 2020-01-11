@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, a {
+  font-size: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  background-color: #424269;
+}
+
+.navbar {
+  background-color: #424269;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  color: white;
+  margin-right: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-caption {
+  background-color: rgba(0,0,0,0.5);
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+}
+
+.box {
+  padding: 10px;
+  margin: 15px 5px;
+  height: 95%;
+}
+
+.box p {
+  text-align: center;
+}
+
+.picture1 img {
+  width: 100%;
+}
+
+.picture2 img {
+  width: 100%;
+}
+
+.overview, .info, .meeting-room {
+  background-color: #6B7D3F;
+  color: #fff;
+}
+
+.catering {
+  background-color: #E6BB4B;
+  color: #424269;
+}
+
+.menu {
+  background-color: #BFB25E;
+  color: rgb(36, 68, 59);
+}
+
+.eco-friendly {
+  background-color: #38685A;
+  color: white;
+}
+
+.footer {
+  background-color: #424269;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.footer h4 {
+  color: #E6BB4B;
+}
+
+.footer a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.card-header {
+  background-color: #6B7D3F;
+  color: white;
+}
+
+.card-header:hover {
+  background-color: rgb(72, 83, 42);
+}
+
+.card-body {
+  background-color: #BFB25E;
+  color: rgb(36, 68, 59);
+}
+
+.card-body p, .card-header p {
+  text-align: center;
+}
+
+.extras {
+  border-top: 1px solid #38685A;
+  border-bottom: 1px solid #38685A;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.more {
+  padding-top: 20px;
+}
+
+.page-header {
+  text-align: center;
+  color: #38685A;
+  font-weight: bolder;
+}
+
+.about-us {
+  background-color: #E6BB4B;
+  color: #424269;
+}
+
+.btn {
+  background-color: #38685A;
+  color: #FFF;
+}
+
+.btn:hover {
+  background-color: #26473e;
+  color: #fff;
+}
+
+.btn a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-btn {
+  background-color: #26473e;
+}
+
+.contact-us {
+background-color: #38685A;
+color: rgb(219, 205, 109);
+}
+
+.contact-us a {
+  color: #fff;
+}
+
+.contact-us h1 {
+  color: #E6BB4B;
 }
