@@ -23,9 +23,9 @@ class Header extends Component {
     return (
       <React.Fragment>
         <Jumbotron className="header">
-          <Navbar dark sticky="top" expand="md">
-            <div className="col-3 align-self-center">
-              <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" className="img-fluid" alt="Cool Beans Logo" /></NavbarBrand>
+          <Navbar dark sticky="top" expand="lg">
+            <div className="col-3 col-lg-2 offset-1 align-self-center mr-5">
+              <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" className="img-fluid logo" alt="Cool Beans Logo" /></NavbarBrand>
             </div>
             <div className="col">
               <NavbarToggler onClick={this.toggleNav} />

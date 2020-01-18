@@ -2,8 +2,8 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-p, a {
-  font-size: 1.1rem;
+p, a, li {
+  font-size: 1.3rem;
 }
 
 a, .buttontext {
@@ -11,9 +11,14 @@ a, .buttontext {
 }
 
 .header {
-  background-color: #424269;
+  background-color: #424269!important;
   padding: none;
+  margin: none;
   width: 100%;
+}
+
+.logo {
+  margin: 20px;
 }
 
 .navbar {
@@ -25,6 +30,7 @@ a, .buttontext {
   color: white;
   margin-right: 10px;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
 }
 
 .carousel-caption {
@@ -73,12 +79,13 @@ h2, h3, h4, h5 {
   color: white;
 }
 
-.footer {
+.footer, .footer-nav {
   background-color: #424269;
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 15px;
+  width: 100%;
 }
 
 .footer h4 {
@@ -91,12 +98,12 @@ h2, h3, h4, h5 {
 }
 
 .card-header {
-  background-color: #6B7D3F;
+  background-color: #6B7D3F!important;
   color: white;
 }
 
 .card-header:hover {
-  background-color: rgb(72, 83, 42);
+  background-color: rgb(72, 83, 42)!important;
 }
 
 .card-body {
