@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
 
- class Menu extends Component {
+ class Catering extends Component {
   constructor(props) {
     super(props);
 
@@ -55,9 +55,9 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
   render() {
     return(
       <React.Fragment>
-        <div class="container">
+        <div className="container">
           <Row className="row-content">
-            <div class="col col-lg-4 page-header">
+            <Col className="col-lg-4 page-header">
               <h2>CATERING</h2>
               <h3>How It Works</h3>
               <p>For the best possible service, please place your orders 24 hours in advance.
@@ -70,26 +70,23 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
               <p>We care about our environment. We use eco-friendly products that help make a
                 difference. Most of our containers are made from renewable resources & are 100% compostable.</p>
               <br />
+            </Col>
 
-            </div>
-
-
-            <div class="col-12 col-lg-8 mx-auto">
-              <div class="page-header">
+            <Col className="col-12 col-lg-8 mx-auto">
+              <div className="page-header">
                 <h2>CATERING MENU</h2>
                 <p>Menu and pricing are subject to change -- please call to verify.</p>
               </div>
               <div id="accordion">
-
-                <div class="card">
+                <Card>
                   <a data-toggle="collapse" data-target="#boxed">
-                    <div role="tab" class="card-header">
+                    <CardHeader onClick={this.toggleBoxed}>
                       <h3>Boxed Lunches</h3>
                       <p>1 serving</p>
-                    </div>
+                    </CardHeader>
                   </a>
-                  <div class="collapse" id="boxed" data-parent="#accordion">
-                    <div class="card-body">
+                  <Collapse isOpen={this.state.isBoxedOpen} id="boxed" data-parent="#accordion">
+                    <CardBody>
                       <p>Each box comes with gourmet kettle chips & a fresh baked chocolate chip cookie for one.
                       </p>
                       <h3>Sandwiches and Wraps</h3>
@@ -127,18 +124,18 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
                       <h5>Strawberry Spinach Salad</h5>
                       <p>$7.99 -- spinach + strawberries + apple + pecans + raspberry vinaigrette + bleu cheese
                         <br /> <small>ADD chicken $2.00</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
+                    </CardBody>
+                  </Collapse>
+                </Card>
+                <Card>
                   <a data-toggle="collapse" data-target="#trays">
-                    <div role="tab" class="card-header">
+                    <CardHeader onClick={this.toggleGroup}>
                       <h3>Group Trays</h3>
                       <p>8 - 10 servings</p>
-                    </div>
+                    </CardHeader>
                   </a>
-                  <div class="collapse" id="trays" data-parent="#accordion">
-                    <div class="card-body">
+                  <Collapse isOpen={this.state.isGroupOpen} id="trays" data-parent="#accordion">
+                    <CardBody>
                       <h3>Sandwiches and Wraps</h3>
                       <h5>Chicken Salad Wrap</h5>
                       <p>$59.99 -- house-made chicken salad (marinated chicken, apples, grapes, and onion with special sauce)
@@ -179,18 +176,18 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
                       <h5>Strawberry Spinach Salad</h5>
                       <p>$36.99 -- spinach + strawberries + apple + pecans + raspberry vinaigrette +
                         a side of bleu cheese served with a freshly-baked baguette</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
+                    </CardBody>
+                  </Collapse>
+                </Card>
+                <Card>
                   <a data-toggle="collapse" data-target="#breakfast">
-                    <div role="tab" class="card-header">
+                    <CardHeader onClick={this.toggleBreakfast}>
                       <h3>Breakfast Items</h3>
                       <p>10 - 12 servings</p>
-                    </div>
+                    </CardHeader>
                   </a>
-                  <div class="collapse" id="breakfast" data-parent="#accordion">
-                    <div class="card-body">
+                  <Collapse isOpen={this.state.isBreakfastOpen} id="breakfast" data-parent="#accordion">
+                    <CardBody>
                       <h5>Assorted Pastry Tray</h5>
                       <p>$25.99 -- danishes + cinnamon rolls + morning buns + scones + muffins</p>
                       <h5>Yogurt Parfait</h5>
@@ -199,38 +196,38 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
                       <p>$25.99 -- fresh seasonal fruit with our sweet yogurt dip</p>
                       <h5>Cool Beans Coffee for the Group</h5>
                       <p>$15.99 -- your choice of our hot, fresh coffee served in an insulated, portable container</p>
-                    </div>
-                  </div>
-                </div>
+                    </CardBody>
+                  </Collapse>
+                </Card>
 
-                <div class="card">
+                <Card>
                   <a data-toggle="collapse" data-target="#dessert">
-                    <div role="tab" class="card-header">
+                    <CardHeader onClick={this.toggleDessert}>
                       <h3>Dessert Trays</h3>
                       <p>10 servings</p>
-                    </div>
+                    </CardHeader>
                   </a>
-                  <div class="collapse" id="dessert" data-parent="#accordion">
-                    <div class="card-body">
+                  <Collapse isOpen={this.state.isDessertOpen} id="dessert" data-parent="#accordion">
+                    <CardBody>
                       <h5>Pound Cake</h5>
                       <p>$22.00 -- our delicious lemon loaf</p>
                       <h5>Assorted Bars</h5>
                       <p>$32.00 -- rockslide brownies + toffee crunch blondies + white chocolate raspberry cheesecake bars</p>
                       <h5>Chocolate Chip Cookies</h5>
                       <p>$14.00 -- freshly baked chocolate chip cookies</p>
-                    </div>
-                  </div>
-                </div>
+                    </CardBody>
+                  </Collapse>
+                </Card>
 
-                <div class="card">
+                <Card>
                   <a data-toggle="collapse" data-target="#sides-and-drinks">
-                    <div role="tab" class="card-header">
+                    <CardHeader onClick={this.toggleDrink}>
                       <h3>Sides and Drinks</h3>
                       <p>10-12 servings</p>
-                    </div>
+                    </CardHeader>
                   </a>
-                  <div class="collapse" id="sides-and-drinks" data-parent="#accordion">
-                    <div class="card-body">
+                  <Collapse isOpen={this.state.isDrinkOpen} id="sides-and-drinks" data-parent="#accordion">
+                    <CardBody>
                       <h3>Sides</h3>
                       <h5>Pasta Salad</h5>
                       <p>$15.00 -- add on to any sandwich tray order</p>
@@ -239,12 +236,12 @@ import { Card, CardBody, CardHeader, Row, Col, Collapse } from 'reactstrap';
                       <br />
                       <h3>Drinks</h3>
                       <p>choose from an assortment of soda, water, and bottled juices</p>
-                    </div>
-                  </div>
-                </div>
+                    </CardBody>
+                  </Collapse>
+                </Card>
               </div>
-            </div>
-            <div class="page-header mx-auto my-5">
+            </Col>
+            <div className="page-header mx-auto my-5">
               <h3>Gift Certificates Available</h3>
               <p>Choose any amount.</p>
               <p>Call or stop in to get yours today!</p>
