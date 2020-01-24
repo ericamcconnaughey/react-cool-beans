@@ -8,8 +8,13 @@ import About from './AboutComponent';
 import Meeting from './MeetingRoomComponent';
 import Kids from './KidsComponent';
 import Contact from './ContactComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 //import data from '../shared/filename';
+
+const mapStateToProps = state => {
+  return {};
+}
 
 
 class Main extends Component {
@@ -34,9 +39,9 @@ class Main extends Component {
           <Route path='/home' component={HomePage} />
           <Route path='/menu' component={Menu} />
           <Route path='/catering' component={Catering} />
-          <Route path='/about' component={About} />
+          <Route path='/aboutus' component={About} />
           <Route path='/meetingroom' component={Meeting} />
-          <Route path='/forkids' component={Kids} />
+          <Route path='/kids' component={Kids} />
           <Route path='/contact' component={Contact} />
           <Redirect to='/home' />
         </Switch>
@@ -46,4 +51,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));
