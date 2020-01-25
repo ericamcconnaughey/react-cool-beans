@@ -10,10 +10,15 @@ import Kids from './KidsComponent';
 import Contact from './ContactComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { actions } from 'react-redux-form';
 //import data from '../shared/filename';
 
 const mapStateToProps = state => {
   return {};
+}
+
+const mapDispatchToProps = {
+  resetFeedbackForm: () => (actions.reset('feedbackForm'))
 }
 
 
@@ -42,7 +47,7 @@ class Main extends Component {
           <Route path='/aboutus' component={About} />
           <Route path='/meetingroom' component={Meeting} />
           <Route path='/kids' component={Kids} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/contact' render={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
           <Redirect to='/home' />
         </Switch>
         <Footer />
@@ -51,4 +56,4 @@ class Main extends Component {
   }
 }
 
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));

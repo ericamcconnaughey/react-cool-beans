@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Label, Button } from 'reactstrap';
-import { Form, Control, Errors } from 'react-redux-form';
+import { Control, Errors, Form } from 'react-redux-form';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -71,7 +71,7 @@ class Contact extends Component {
                 <Row className="form-group">
                   <Label htmlFor="name" md={2} className="col-form-label">Name</Label>
                   <Col md={10}>
-                    <Control.text model="name" id="name" name="name" 
+                    <Control.text model=".name" id="name" name="name" 
                       placeholder="Name" 
                       className="form-control"
                       validators={{
@@ -81,7 +81,7 @@ class Contact extends Component {
                       }}
                      />
                      <Errors 
-                        className="text-danger"
+                        className="text-warning"
                         model=".name"
                         show="touched"
                         component="div"
@@ -96,7 +96,7 @@ class Contact extends Component {
                 <Row className="form-group">
                   <Label htmlFor="phoneNum" md={2} className="col-form-label">Phone</Label>
                   <Col md={10}>
-                    <Control.text model="phoneNum" id="phoneNum" name="phoneNum" 
+                    <Control.text model=".phoneNum" id="phoneNum" name="phoneNum" 
                         placeholder="Phone number"
                         className="form-control"
                           validators={{
@@ -107,7 +107,7 @@ class Contact extends Component {
                           }}
                      />
                      <Errors 
-                        className="text-danger"
+                        className="text-warning"
                         model=".phoneNum"
                         show="touched"
                         component="div"
@@ -123,7 +123,7 @@ class Contact extends Component {
                 <Row className="form-group">
                   <Label htmlFor="email" md={2} className="col-form-label">Email</Label>
                   <Col md={10}>
-                    <Control.text model="email" id="email" name="email" 
+                    <Control.text model=".email" id="email" name="email" 
                         placeholder="Email" 
                         className="form-control"
                           validators={{
@@ -132,7 +132,7 @@ class Contact extends Component {
                           }}
                      />
                      <Errors 
-                        className="text-danger"
+                        className="text-warning"
                         model=".email"
                         show="touched"
                         component="div"
@@ -175,7 +175,7 @@ class Contact extends Component {
                 <Row className="form-group">
                   <Label htmlFor="feedback" md={2} className="col-form-label">Comments</Label>
                   <Col md={10}>
-                    <Control.textarea model="feedback" className="form-control" id="feedback" name="feedback" rows="8" />
+                    <Control.textarea model=".feedback" className="form-control" id="feedback" name="feedback" rows="8" />
                   </Col>
                 </Row>
                 <Row className="form-group">
