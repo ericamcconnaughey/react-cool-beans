@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
 class Home extends Component {
   render () {
       return (
@@ -48,7 +49,6 @@ class Home extends Component {
             </div>
           </div>
 
-          {/* div className="d-flex" */}
           <div className="row row-content">
             <div className="col-12 col-lg-4">
               <div className="overview box mx-auto">

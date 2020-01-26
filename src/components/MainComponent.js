@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
+import HomeCarousel from './CarouselComponent';
 import Menu from './MenuComponent';
 import Catering from './CateringComponent';
 import About from './AboutComponent';
@@ -33,7 +34,11 @@ class Main extends Component {
   render() {
     const HomePage = () => {
       return (
-        <Home />
+        <React.Fragment>
+          <HomeCarousel />
+          <Home />
+        </React.Fragment>
+        
       );
     }
 
