@@ -78,9 +78,9 @@ render () {
                   be
                   reserved
                   and closed off for private meetings as well. Why not meet in a relaxing place outside the office?</p>
-                <Col className="col offset-4 offset-md-5">
+                <span className=" d-flex justify-content-center">
                   <button role="link" className="btn"><Link to="/meetingroom" className="buttontext">More Info</Link></button>
-                </Col>
+                </span>
                 <Row className="box mt-5">
                   <Col className="col-lg-6">
                     <div className="my-auto">

@@ -6,50 +6,7 @@ class Home extends Component {
   render () {
       return (
         <div className="container">
-          <div className="row row-content">
-            <div className="col-12 col-lg-8 mx-auto">
-              <div id="homeCarousel" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                  <li data-target="#homeCarousel" data-slide-to="0" className="active"></li>
-                  <li data-target="#homeCarousel" data-slide-to="1"></li>
-                  <li data-target="#homeCarousel" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img className="d-block w-100" src="/assets/images/panini.png"
-                      alt="A panini on a plate with a Cool Beans mug next to it" />
-                    <div className="carousel-caption">
-                      <h3>Enjoy a Treat from our Menu</h3>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src="/assets/images/indoorshot1.png"
-                      alt="A look inside Cool Beans Coffee Cafe; showing wooden tables and chairs, a horse sculpture, glass doors leading to the private meeting room, and a person working at a table. " />
-                    <div className="carousel-caption">
-                      <h3>Stay a While</h3>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src="/assets/images/outdoorshot1.png"
-                      alt="A look at Cool Beans from outside; the Cool Beans sign in red on a silver building with 8 large windows." />
-                    <div className="carousel-caption">
-                      <h3>Find us in East Towne</h3>
-                    </div>
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon"></span>
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon"></span>
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="row row-content">
+          <div className="row row-content d-flex justify-content-center">
             <div className="col-12 col-lg-4">
               <div className="overview box mx-auto">
                 <h2>DISCOVER</h2>
@@ -63,14 +20,16 @@ class Home extends Component {
               </div>
             </div>
 
-            <div className="col-12 col-lg-4">
+            <div className="col-12 col-lg-4 align-self-center">
               <div className="row row-content">
                 <div className="col-12">
                   <div className="catering box mx-auto">
                     <h4>We can</h4>
                     <h3>CATER</h3>
                     <h4>your next event!</h4>
-                    <button role="link" className="btn offset-4 offset-lg-3"><Link to="/catering" className="buttontext">Learn More</Link></button>
+                    <span className=" d-flex justify-content-center">
+                      <button role="link" className="btn"><Link to="/catering" className="buttontext">Learn More</Link></button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -112,21 +71,24 @@ class Home extends Component {
                 </div>
                 <div className="row mx-auto">
                   <div className="col-12">
-                    <button className="btn offset-4 offset-lg-3" id="full-menu"><Link to="/menu" className="buttontext">OUR FULL MENU</Link></button>
+                    <span className=" d-flex justify-content-center">
+                      <button className="btn" id="full-menu"><Link to="/menu" className="buttontext">OUR FULL MENU</Link></button>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
 
             <div className="row row-content">
-              <div className="col-lg-3 col-8 mx-auto">
-                <div className="picture2 box">
-                  <img src="/assets/images/latte.png" alt="latte" />
+              <div className="col-lg-4 col-8 mx-auto">
+                <div className="picture2 box w-100 h-100 pt-0 pl-0">
+                  <img src="/assets/images/latte.png" className="align-self-center" alt="latte" />
                 </div>
               </div>
 
-              <div className="col-lg-3 col-12">
+              <div className="col-lg-4 col-12">
                 <div className="eco-friendly box mx-auto">
                   <h4>Locally-Owned and Eco-Friendly</h4>
                   <p>We care about our environment. We use eco-friendly products that help make a difference. Most of our
@@ -134,7 +96,7 @@ class Home extends Component {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-12">
+              <div className="col-lg-4 col-12">
                 <div className="info box mx-auto">
                   <p>Located in the Princeton Club Court, across from Sears in East Towne Mall. Outdoor seating is
                     available.
@@ -149,7 +111,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          
         </div>
       )
     }

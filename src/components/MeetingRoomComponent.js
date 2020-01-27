@@ -14,7 +14,7 @@ render () {
               parties. This room is normally open for Cool Beans' patrons but can be reserved and closed off for private
               meetings as well. The meeting room seats 16-20 people. Why not meet in a relaxing place outside the office?
             </p>
-            <p>For more details or to reserve the room, please give us a call at
+            <p>For more details or to reserve the room, please give us a call at {'  '}
               <a role="button" className="btn" id="phone" href="tel:+16082448414"><i className="fa fa-phone"></i> 1-608-244-8414
               </a>
               <br />

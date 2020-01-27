@@ -43,8 +43,8 @@ class Contact extends Component {
         </div>
 
         <div className="container">
-          <Row className="row-content align-items-center">
-            <Col className="col-sm-6 box">
+          <Row className="row-content">
+            <Col className="col-sm-6 box offset-2">
               <h5>Our Address</h5>
               <address>
                 1748 Eagan Rd.<br />
@@ -66,7 +66,7 @@ class Contact extends Component {
               <h2>Send us your Feedback</h2>
               <hr />
             </Col>
-            <Col md={10}>
+            <Col md={{size: 10, offset: 1}}>
               <Form model="feedbackForm" onSubmit={values => this.handleSubmit(values)}>
                 <Row className="form-group">
                   <Label htmlFor="name" md={2} className="col-form-label">Name</Label>

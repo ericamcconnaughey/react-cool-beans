@@ -24,9 +24,9 @@ render () {
             <br />
             <p><small>Menu and prices subject to change.</small></p>
             <br />
-            <Col className="offset-4 offset-md-5">
+            <span className=" d-flex justify-content-center">
               <button className="btn" role="link" id="full-menu"><Link to="/menu" className="buttontext">Full Menu</Link></button>
-            </Col>
+            </span>
           </CardBody>
         </Col>
 

@@ -42,7 +42,7 @@ h2, h3, h4, h5 {
 }
 
 .box {
-  padding: 10px;
+  padding: 15px 10px;
   margin: 15px 5px;
   height: 95%;
 }
@@ -97,6 +97,10 @@ h2, h3, h4, h5 {
   font-size: 0.8rem;
 }
 
+.footer a:hover {
+  color: #E6BB4B;
+}
+
 .card-header {
   background-color: #6B7D3F!important;
   color: white;
@@ -137,6 +141,10 @@ h2, h3, h4, h5 {
   color: #424269;
 }
 
+button {
+  justify-self: center;
+}
+
 .btn {
   background-color: #38685A;
   color: #FFF;
@@ -148,7 +156,7 @@ h2, h3, h4, h5 {
 }
 
 .btn a:hover {
-  color: #fff;
+  color: #fff!important;
   text-decoration: none;
 }
 
@@ -160,10 +168,12 @@ h2, h3, h4, h5 {
 .contact-us {
 background-color: #38685A;
 color: rgb(219, 205, 109);
+font-size: 1.3rem;
 }
 
 .contact-us a {
   color: #fff;
+  font-size: 1.3rem;
 }
 
 .contact-us h1 {
