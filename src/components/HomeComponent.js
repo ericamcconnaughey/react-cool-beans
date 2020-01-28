@@ -40,11 +40,19 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
+              <div className="row row-content">
+                <div className="col-12">
+                  <div className="thank box mx-auto">
+                    <br />
+                    <p>We know you have<br /> a lot of choices. <br />Thank you for choosing us!</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
             <div className="col-12 col-lg-4">
-              <div className="menu box mx-auto">
+              <div className="menu box mx-auto pt-10">
                 <h3>FOOD and DRINK</h3>
                 <div className="row row-content">
                   <div className="col-6 col-lg-12">
@@ -81,16 +89,17 @@ class Home extends Component {
           </div>
 
 
-            <div className="row row-content">
+            <div className="row row-content d-flex">
               <div className="col-lg-4 col-8 mx-auto">
-                <div className="picture2 box w-100 h-100 pt-0 pl-0">
+                <div className="picture2 box w-100 pt-0 pl-0">
                   <img src="/assets/images/latte.png" className="align-self-center" alt="latte" />
                 </div>
               </div>
 
               <div className="col-lg-4 col-12">
                 <div className="eco-friendly box mx-auto">
-                  <h4>Locally-Owned and Eco-Friendly</h4>
+                  <h4>LOCALLY-OWNED <br />and ECO-FRIENDLY</h4>
+                  <br />
                   <p>We care about our environment. We use eco-friendly products that help make a difference. Most of our
                     containers are made from renewable resources and are 100% compostable.</p>
                 </div>
@@ -102,12 +111,11 @@ class Home extends Component {
                     available.
                   </p>
 
-                  <h5>HOURS:</h5>
+                  <h4>HOURS:</h4>
                   <p>Monday - Saturday: 6:30am - 9pm<br />Kitchen Closes at 8pm</p>
 
                   <h5>WIRELESS INTERNET AVAILABLE</h5>
 
-                  <p>We know you have a lot of choices. <br />Thank you for choosing us!</p>
                 </div>
               </div>
             </div>
