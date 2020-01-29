@@ -44,8 +44,7 @@ class Contact extends Component {
 
         <div className="container">
           <Row className="row-content">
-            <Col className="col-sm-6 box offset-2">
-              <h5>Our Address</h5>
+            <Col className="col-md-6 box offset-md-1 offset-lg-2">
               <address>
                 1748 Eagan Rd.<br />
                 Madison, WI 53704<br />

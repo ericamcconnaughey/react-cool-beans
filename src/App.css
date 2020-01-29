@@ -85,6 +85,10 @@ h2, h3, h4, h5 {
   color: white;
 }
 
+.eco-friendly, .info {
+  height: 90%;
+}
+
 .footer, .footer-nav {
   background-color: #424269;
   color: white;

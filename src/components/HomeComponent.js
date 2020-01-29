@@ -110,12 +110,9 @@ class Home extends Component {
                   <p>Located in the Princeton Club Court, across from Sears in East Towne Mall. Outdoor seating is
                     available.
                   </p>
-
                   <h4>HOURS:</h4>
                   <p>Monday - Saturday: 6:30am - 9pm<br />Kitchen Closes at 8pm</p>
-
                   <h5>WIRELESS INTERNET AVAILABLE</h5>
-
                 </div>
               </div>
             </div>
