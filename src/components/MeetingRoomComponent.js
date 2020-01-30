@@ -19,6 +19,9 @@ render () {
               </a>
               <br />
             </p>
+            <div class="picture1 box mx-auto">
+              <img class="w-100" src="assets/images/indoorshot1.png" alt="interior view of the cafe leading to the meeting room doors" />
+            </div>
           </div>
         </div>
     </div>

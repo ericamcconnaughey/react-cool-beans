@@ -8,7 +8,7 @@ const items = [
     caption: 'Enjoy a Treat from our Menu'
   },
   {
-    src: '/assets/images/indoorshot1.png',
+    src: '/assets/images/indoorshot2.png',
     altText: 'A look inside Cool Beans Coffee Cafe; showing wooden tables and chairs, a horse sculpture, glass doors leading to the private meeting room, and a person working at a table. ',
     caption: 'Stay a While'
   },
@@ -49,7 +49,7 @@ const HomeCarousel = (props) => {
         key={item.src}
       >
         <img className="d-block w-100" src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption captionHeader={item.caption} />
       </CarouselItem>
     );
   });

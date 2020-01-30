@@ -22,7 +22,7 @@ class Home extends Component {
 
             <div className="col-12 col-lg-4 align-self-center">
               <div className="row row-content">
-                <div className="col-12">
+                <div className="col-8 mx-auto col-lg-12">
                   <div className="catering box mx-auto">
                     <h4>We can</h4>
                     <h3>CATER</h3>
@@ -41,7 +41,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="row row-content">
-                <div className="col-12">
+                <div className="col-8 mx-auto col-lg-12">
                   <div className="thank box mx-auto">
                     <br />
                     <p>We know you have<br /> a lot of choices. <br />Thank you for choosing us!</p>

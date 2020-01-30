@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //if styling doesn't work in the footer, try switching the classes for the footer with the container classes below.
 function Footer(props) {
   return (
-      <footer className="footer-nav">
+      <footer className="footer-nav sticky">
         <div className="container container-fluid footer"> 
           <h4>Links</h4>
           <div className="row">
